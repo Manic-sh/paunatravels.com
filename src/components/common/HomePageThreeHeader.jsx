@@ -227,7 +227,7 @@ function HomePageThreeHeader() {
                 <div className="nav-logo d-flex justify-content-between align-items-center">
                   <a href="index.html">
                     <img
-                      src={process.env.PUBLIC_URL + "/images/logo-w.png"}
+                      src={process.env.PUBLIC_URL + "/images/logo.png"}
                       alt="logo"
                     />
                   </a>
@@ -284,7 +284,7 @@ function HomePageThreeHeader() {
                   </div>
                 </div>
               </div>
-              <div className="col-xxl-7 col-xl-8 col-lg-9 col-md-8 col-sm-6 col-xs-6">
+              <div className="col-xxl-7 col-xl-8 col-lg-9 col-md-8 col-sm-6 col-xs-6 align-self-center">
                 <nav
                   className={
                     mobileSideberMenu === 1 ? "main-nav slidenav" : "main-nav"
@@ -300,37 +300,9 @@ function HomePageThreeHeader() {
                   </div>
                   <ul>
                     <li
-                      className="has-child-menu"
                       onClick={() => dispatch({ type: "homeOne" })}
                     >
                       <Link to={"#"}>Home</Link>
-                      <i className="fl flaticon-plus">+</i>
-                      <ul
-                        className={
-                          state.activeMenu === "homeOne"
-                            ? "sub-menu d-block"
-                            : "sub-menu d-none"
-                        }
-                      >
-                        <li>
-                          <Link to={"/"}>Home Style 1</Link>
-                        </li>
-                        <li>
-                          <Link to={`${process.env.PUBLIC_URL}/index2`}>
-                            Home Style 2
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to={`${process.env.PUBLIC_URL}/index3`}>
-                            Home Style 3
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to={`${process.env.PUBLIC_URL}/index4`}>
-                            Home Style 4
-                          </Link>
-                        </li>
-                      </ul>
                     </li>
                     <li>
                       <Link

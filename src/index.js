@@ -44,7 +44,7 @@ function Root() {
     <BrowserRouter basename="/">
       <Switch>
         {/*main layout*/}
-        <Route exact path="/" component={MainLayout} />
+        <Route exact path="/" component={HomethreeLayout} />
         {/* secound layout */}
         <Route
           exact
@@ -54,7 +54,7 @@ function Root() {
         <Route
           exact
           path={`${process.env.PUBLIC_URL}/index3`}
-          component={HomethreeLayout}
+          component={MainLayout}
         />
         <Route
           exact
