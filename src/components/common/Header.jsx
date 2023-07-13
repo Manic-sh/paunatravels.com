@@ -455,7 +455,7 @@ function Header() {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-xs-6">
+              <div className="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-xs-6 align-self-center">
                 <nav
                   className={
                     isOpenActive
