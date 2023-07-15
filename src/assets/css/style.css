@@ -3557,6 +3557,9 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
   }
 }
 
+.searchbar-section  .react-datepicker-wrapper{
+  width: 100%;
+}
 .searchbox-input {
   position: relative;
   width: 100%;
