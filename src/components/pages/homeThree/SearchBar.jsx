@@ -45,12 +45,11 @@ function SearchBar() {
                         <i className="bi bi-geo-alt" />
                       </div>
                       <div className="searchbox-input">
-                        <label htmlFor="activity-dropdown">Destination</label>
                         <Select
                           defaultValue={selectedOption}
                           onChange={setSelectedOption}
                           options={optionsForDestination}
-                          placeholder="Where are you going?"
+                          placeholder="Where to..."
                           className="selectbox"
                         ></Select>
                       </div>
@@ -62,7 +61,6 @@ function SearchBar() {
                         <i className="bi bi-text-paragraph" />
                       </div>
                       <div className="searchbox-input">
-                        <label htmlFor="activity-dropdown">Travel Type</label>
                         <Select
                         className="selectbox"
                           defaultValue={selectedOption}
@@ -80,7 +78,6 @@ function SearchBar() {
                         <i className="bi bi-person-plus" />
                       </div>
                       <div className="searchbox-input">
-                        <label htmlFor="activity-dropdown">Person</label>
                         <Select
                         className="selectbox"
                           defaultValue={selectedOption}
@@ -97,14 +94,13 @@ function SearchBar() {
                         <i className="bi bi-capslock" />
                       </div>
                       <div className="searchbox-input">
-                        <label htmlFor="activity-dropdown">Journey Date</label>
                         <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-2">
+              <div className="col-lg-2 align-self-center">
                 <div className="main-form-submit">
                   <Link
                     onClick={scrollTop}

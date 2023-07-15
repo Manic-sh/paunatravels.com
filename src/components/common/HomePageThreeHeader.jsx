@@ -227,7 +227,7 @@ function HomePageThreeHeader() {
                 <div className="nav-logo d-flex justify-content-between align-items-center">
                   <a href="index.html">
                     <img
-                      src={process.env.PUBLIC_URL + "/images/logo.png"}
+                      src={process.env.PUBLIC_URL + "/images/logo.svg"}
                       alt="logo"
                     />
                   </a>
@@ -293,7 +293,7 @@ function HomePageThreeHeader() {
                   <div className="inner-logo d-xl-none text-center">
                     <Link to={"#"}>
                       <img
-                        src={process.env.PUBLIC_URL + "/images/logo.png"}
+                        src={process.env.PUBLIC_URL + "/images/logo-w.png"}
                         alt=""
                       />
                     </Link>
