@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+
 
 const scrollTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
 function PackageArea() {
+  const [products, setProducts] = useState([])
+
+
+  // useEffect(() => {
+  //   const getProducts = async () => {
+  //     await getDocs(collectionRef).then((product) => {
+  //       let productData = product.docs.map((doc) => ({ ...doc.data(), id: "p9fitTx9PCOi1CwNrhgo" }))
+  //         setProducts(productData)
+  //       }).catch((err) => {
+  //         console.log(err);
+  //       })
+  //     }
+  //     getProducts()
+  //   }, [])
+
+
+    console.log("🚀 ~ file: PackageArea.jsx:17 ~ PackageArea ~ products:", products);
+
   return (
     <>
       <div className="package-area package-style-two pt-110 chain">

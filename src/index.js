@@ -28,6 +28,7 @@ import "./index.css";
 import HomethreeLayout from './components/layout/HomethreeLayout';
 import HomeFourLayout from './components/layout/HomeFourLayout';
 
+import Maintainance from './components/pages/maintainance';
 /*
  * Version :Tourx-pro 0.1
  * Event : Rendering all content to web.
@@ -44,7 +45,7 @@ function Root() {
     <BrowserRouter basename="/">
       <Switch>
         {/*main layout*/}
-        <Route exact path="/" component={HomethreeLayout} />
+        <Route exact path="/" component={Maintainance} />
         {/* secound layout */}
         <Route
           exact
